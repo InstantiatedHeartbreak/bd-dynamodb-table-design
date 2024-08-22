@@ -1,0 +1,12 @@
+Receipts
+
+date // partition key, String
+customerId // sort key, String
+totalAmount // number
+sundaesPurchased // String List
+
+aws cloudformation create-stack
+--region us-west-2
+--stack-name dynamodbtabledesign-receiptstable01
+--template-body file://cloudformation/dynamodbtabledesign/ReceiptsTable.yaml
+--capabilities CAPABILITY_IAM
